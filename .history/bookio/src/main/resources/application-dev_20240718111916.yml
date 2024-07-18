@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgressql://localhost:5232/bookio
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver

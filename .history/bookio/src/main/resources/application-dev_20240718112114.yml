@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgressql://localhost:5232/bookio
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database:

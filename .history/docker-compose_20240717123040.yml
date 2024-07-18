@@ -1,0 +1,11 @@
+services:
+  postgres:
+    container_name: postgres-sql-bsn
+    image: postgres
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: POSTGRES_PASSWORD
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: bookio
+    volumes:
+      - postgres:/data/postgres
